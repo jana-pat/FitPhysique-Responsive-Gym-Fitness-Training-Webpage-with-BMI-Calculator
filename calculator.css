@@ -1,0 +1,125 @@
+/* Global Background */
+body {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c1e0f 100%);
+  color: #fff;
+}
+
+/* Fitness Calculator Section */
+.fitness__calculator {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.section__header {
+  color: #d4a373;
+}
+
+.section__description {
+  color: #b08968;
+}
+
+.calculator__form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #8d5524;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form__group {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__group label {
+  font-size: 1.2rem;
+  color: #d4a373;
+  margin-right: 1rem;
+}
+
+.form__group input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100px;
+  border: 1px solid #8d5524;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+}
+
+.calculator__form button {
+  margin-top: 1rem;
+  background: #8d5524;
+  border: none;
+}
+
+.calculator__form button:hover {
+  background: #a1663a;
+}
+
+.calculator__result {
+  display: none;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid #8d5524;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.calculator__result h4 {
+  color: #d4a373;
+  margin-bottom: 1rem;
+}
+
+.bmi__counter {
+  font-size: 2.5rem;
+  color: #e9c46a;
+  margin: 1rem 0;
+  animation: pulse 1.5s infinite;
+}
+
+.calculator__result p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.calculator__result strong {
+  color: #d4a373;
+}
+
+.plan__section h5 {
+  color: #d4a373;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.plan__section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan__section li {
+  margin: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.plan__section li:before {
+  content: "\2022"; /* Bullet point */
+  color: #8d5524;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
